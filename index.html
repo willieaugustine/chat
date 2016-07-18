@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+   <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaty</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+   <div class="row  container">
+      <!--  sidebar-->
+       <div class="small-3 large-expand side-bar columns">
+           <div class=" logo">
+           <h1>ch@ty</h1>
+           </div>
+           <div class="navigate">
+               <nav>
+                   <ul><a href="#">HOME</a></ul>
+                   <ul><a href="#">CHAT ROOMS</a></ul>
+                    <ul><a href="#">ONLINE</a></ul>
+                     <ul></ul>
+               </nav>
+           </div>
+       </div>
+       <div class="row">
+       
+       <div class="small-8 large-expand columns">
+        
+         <div class="row expanded top">
+         <div class="small-4 large-expand columns">
+         
+         
+
+             </div>
+          
+          
+          
+
+         <div class="small-4 large-expand  columns">
+         
+         <!--         sign up-->
+       
+          <a id="popup" onclick="div_show()" href="#">sign up</a>
+          <div id="register">
+              <form>
+                  <input type="text" placeholder="username">
+                  <input type="email" placeholder="youremail@email.com">
+                  <input type="password" placeholder="choose password">
+                  <input type="password" placeholder="re-enter password">
+                  <input type="submit">
+              </form>
+          </div>
+            
+             
+             
+<!--   sign in      -->
+       
+          <a  id="popup" onclick="div_show()" href="#">sign in</a>
+          <div>
+              <form id="enter">
+                  <input type="text" placeholder="username">
+                  <input type="password" placeholder="enter password" >
+                  <input type="submit">
+              </form>
+              
+             
+          </div>
+             </div>
+            
+             
+           </div><!--end sign up row-->
+     
+       
+<!--       message-->
+       
+       <div class="row mid">
+        <div class="small-8 large-expand chat-box  columns">
+        <form name="message">
+<!--         <input type="text" id="name" placeholder="username"> -->
+        <input class="mess" type="text" id="messege" placeholder="message">
+            
+            </form> 
+            <input  type="submit" onclick="showInput()";>
+            
+            
+             <label> Conversation</label>
+               <span id="display"></span>
+             
+        </div>
+       </div><!-- end message row-->
+           </div>
+           
+          
+           
+       </div><!-- end row-->
+       
+      
+       
+       
+      </div><!--   end body row-->
+  
+
+<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDtEX3G7b-EZ57DicTTBuj8cq_fTaSeURM",
+    authDomain: "chaty-90d55.firebaseapp.com",
+    databaseURL: "https://chaty-90d55.firebaseio.com",
+    storageBucket: "",
+  };
+  firebase.initializeApp(config);
+</script>
+    
+   
+   
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
